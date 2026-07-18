@@ -21,6 +21,6 @@ public class PostmanEchoTest {
                 .post("/post")
                 .then()
                 .statusCode(200)
-                .body("data", equalTo(requestData));
+                .body("data", equalTo("broken data for ci check"));
     }
 }
